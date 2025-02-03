@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeardyDevAdventures</title>
+    <title>Beardy Dev Adventures</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="theme-toggle">🌙</div>
     <header>
-        <h1>BeardyDevAdventures</h1>
-        <p>Follow my adventures in game development and XR!</p>
-        <nav>
-            <ul>
-                <li><a href="https://youtube.com/@beardydevadventures" target="_blank">YouTube</a></li>
-                <li><a href="https://github.com/beardydevadventures" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <img src="pixel-character.png" alt="Beardy Dev Pixel Character" class="pixel-character">
+        <h1>Beardy Dev Adventures</h1>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to BeardyDevAdventures! A passionate developer and XR enthusiast. Join me as I explore the world of interactive digital experiences.</p>
+        <section class="link-section" id="youtube">
+            <a href="https://www.youtube.com/@beardydevadventures" target="_blank">
+                <img src="icons/youtube-icon.svg" alt="YouTube Icon"> YouTube
+            </a>
         </section>
-        <section id="videos">
-            <h2>Latest Videos</h2>
-            <div id="video-container">
-                <!-- YouTube videos will be embedded here by JavaScript -->
-            </div>
+        <section class="link-section" id="github">
+            <a href="https://github.com/beardydevadventures" target="_blank">
+                <img src="icons/github-icon.svg" alt="GitHub Icon"> GitHub
+            </a>
+        </section>
+        <section class="link-section" id="printing">
+            <a href="https://www.thingiverse.com/beardydevadventures/makes" target="_blank">
+                <img src="icons/thingiverse-icon.svg" alt="3D Printing Icon"> 3D Printing
+            </a>
+        </section>
+        <section class="link-section" id="sketchfab">
+            <a href="https://sketchfab.com/beardydevadventures" target="_blank">
+                <img src="icons/sketchfab-icon.svg" alt="Sketchfab Icon"> Sketchfab
+            </a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 BeardyDevAdventures</p>
+        <section class="personal-links">
+            <a href="https://matthewaisthorpe.com.au/" target="_blank">Personal Site</a>
+            <a href="https://www.linkedin.com/in/matthewaisthorpe/" target="_blank">LinkedIn</a>
+        </section>
     </footer>
-    <script src="scripts.js"></script>
+    <script>
+        document.querySelector('.theme-toggle').addEventListener('click', function () {
+            document.body.classList.toggle('light-theme');
+            this.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
+        });
+    </script>
 </body>
 </html>
