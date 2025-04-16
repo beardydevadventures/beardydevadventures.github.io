@@ -22,36 +22,34 @@ body {
 }
 
     body.light-theme {
-        background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Slightly darker */
-        color: #222; /* Darker text for contrast */
+        --neon-color: linear-gradient(90deg, #9900cc, #006666);
+        background: linear-gradient(135deg, #e0e0e0, #ffffff);
+        color: #222;
     }
 
-        /* Light Mode: Improve Link Contrast */
         body.light-theme .link-section {
-            background: rgba(0, 0, 0, 0.1); /* Light Gray */
+            background: rgba(0, 0, 0, 0.1);
         }
 
             body.light-theme .link-section a {
-                color: #333; /* Darker for readability */
+                color: #333;
                 -webkit-text-fill-color: inherit;
             }
 
-        /* Light Mode: Glow Adjustments */
         body.light-theme .pixel-character {
-            box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; /* Slightly dimmer glow */
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
         }
 
         body.light-theme .link-section a:hover {
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff; /* Reduce glow intensity */
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
         }
 
-        /* Light Mode: Footer */
         body.light-theme footer {
-            background: rgba(0, 0, 0, 0.2); /* Darker footer for contrast */
+            background: rgba(0, 0, 0, 0.2);
         }
 
         body.light-theme .personal-links a {
-            color: #333; /* Darker text */
+            color: #333;
         }
 
 .theme-toggle {
@@ -119,7 +117,7 @@ main {
     .link-section a img {
         width: 24px;
         height: 24px;
-        fill: currentColor; /* Makes the icon inherit text color */
+        fill: currentColor;
     }
 
     .link-section a {
@@ -129,11 +127,11 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px; /* Space between icon and text */
+        gap: 10px;
         background: var(--neon-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        color: #fff; /* Ensures icons are visible */
+        color: #fff;
     }
 
         .link-section a:hover {
@@ -169,3 +167,10 @@ footer {
     .personal-links a:hover {
         text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
     }
+
+.link-section a svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}

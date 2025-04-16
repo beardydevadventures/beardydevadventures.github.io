@@ -15,32 +15,34 @@
     <main>
         <section class="link-section" id="youtube">
             <a href="https://www.youtube.com/@beardydevadventures" target="_blank">
-                <img src="icons/youtube-icon.svg" alt="YouTube Icon"> YouTube
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.123 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.123 36.265 18.0732Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" />
+                </svg> 
+                YouTube
             </a>
         </section>
-        <section class="link-section" id="github">
-            <a href="https://github.com/beardydevadventures" target="_blank">
-                <img src="icons/github-icon.svg" alt="GitHub Icon"> GitHub
+        <section class="link-section" id="twitter">
+            <a href="https://x.com/beardydevadv" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
+                </svg> 
+                Twitter
             </a>
         </section>
-        <section class="link-section" id="printing">
-            <a href="https://www.thingiverse.com/beardydevadventures/makes" target="_blank">
-                <img src="icons/thingiverse-icon.svg" alt="3D Printing Icon"> 3D Printing
-            </a>
-        </section>
-        <section class="link-section" id="sketchfab">
-            <a href="https://sketchfab.com/beardydevadventures" target="_blank">
-                <img src="icons/sketchfab-icon.svg" alt="Sketchfab Icon"> Sketchfab
-            </a>
-        </section>
+
     </main>
     <footer>
         <section class="personal-links">
-            <a href="https://matthewaisthorpe.com.au/" target="_blank">Personal Site</a>
-            <a href="https://www.linkedin.com/in/matthewaisthorpe/" target="_blank">LinkedIn</a>
+            <a href="mailto:beardydevadventures@gmail.com">Contact Me</a>
         </section>
     </footer>
     <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.body.classList.add('light-theme');
+            document.querySelector('.theme-toggle').textContent = '☀️';
+        }
+
         document.querySelector('.theme-toggle').addEventListener('click', function () {
             document.body.classList.toggle('light-theme');
             this.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
