@@ -4,85 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beardy Dev Adventures</title>
+    <title>Beardy Dev Adventures | XR Builds, Devlogs & Experiments</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="Beardy Dev's home base for building weird web things, sharing game dev logs, and testing out creative code experiments.">
-    <meta name="keywords" content="Beardy Dev Adventures, game dev, pixel art, indie dev, YouTube, VR">
+    <meta name="description" content="Beardy Dev Adventures is an XR maker lab for weird VR, mixed reality, AI and game development experiments built in public by Matthew Aisthorpe.">
+    <meta name="keywords" content="Beardy Dev Adventures, XR, VR, mixed reality, Meta Quest, Unity, game dev, devlogs, indie dev, AI experiments">
     <meta name="author" content="Beardy Dev Adventures">
-    <meta name="theme-color" content="#111827" />
+    <meta name="theme-color" content="#050816" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Beardy Dev Adventures" />
-    <meta property="og:description" content="Beardy Dev's home base for building weird web things, sharing game dev logs, and testing out creative code experiments." />
+    <meta property="og:title" content="Beardy Dev Adventures | XR Builds, Devlogs & Experiments" />
+    <meta property="og:description" content="Weird XR builds, devlogs and interactive experiments from an Aussie maker lab." />
     <meta property="og:image" content="https://beardydevadventures.github.io/pixel-character.png" />
     <meta property="og:url" content="https://beardydevadventures.github.io/" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Beardy Dev Adventures" />
-    <meta name="twitter:description" content="Beardy Dev's home base for building weird web things, sharing game dev logs, and testing out creative code experiments." />
+    <meta name="twitter:title" content="Beardy Dev Adventures | XR Builds, Devlogs & Experiments" />
+    <meta name="twitter:description" content="Weird XR builds, devlogs and interactive experiments from an Aussie maker lab." />
     <meta name="twitter:url" content="https://beardydevadventures.github.io/" />
     <meta name="twitter:image" content="https://beardydevadventures.github.io/pixel-character.png" />
+
     <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="theme-toggle">🌙</div>
-    <header>
-        <img src="pixel-character.png" alt="Beardy Dev Pixel Character" class="pixel-character">
-        <h1>Beardy Dev Adventures</h1>
-    </header>
-    <main>
-        <section class="link-section" id="youtube">
-            <a href="https://www.youtube.com/@beardydevadventures" target="_blank">
-                <svg width="24" height="24" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.123 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.123 36.265 18.0732Z" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" />
-                </svg>
-                YouTube
-            </a>
-        </section>
-        <section class="link-section" id="twitter">
-            <a href="https://x.com/beardydevadv" target="_blank">
-                <svg width="24" height="24" viewBox="0 0 1200 1227" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
-                </svg>
-                Twitter
-            </a>
-        </section>
-        <section class="link-section" id="buymeabeer">
-            <a href="https://www.buymeacoffee.com/beardydev" target="_blank">
-                <svg width="24" height="24" viewBox="0 0 110.03 122.88" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M28.89,4.45A17.42,17.42,0,0,1,36.46.67a19.64,19.64,0,0,1,8.15-.1,17.41,17.41,0,0,1,6.17,2.52A17.38,17.38,0,0,1,56.28.6,18.75,18.75,0,0,1,63.84.22,20.52,20.52,0,0,1,71,2.77a21.48,21.48,0,0,1,7.87,8,14.91,14.91,0,0,1,9,2.92,16,16,0,0,1,4.34,4.76,14.94,14.94,0,0,1,2.06,6.45c.41,5-1.65,10.45-7.68,14.84V50.44l5-.44C101.71,49.11,110,58.29,110,68.41V90.05c0,9.93-8.16,18.91-18,18l-5.36-.46V113a9.93,9.93,0,0,1-2.92,7h0a9.92,9.92,0,0,1-7,2.92H18.24A10,10,0,0,1,8.31,113c0-7.69.1-62,.13-73.69C1.49,33.57-.68,27,.18,21.08A17.13,17.13,0,0,1,4.56,12a18.88,18.88,0,0,1,8.38-5.26,19.15,19.15,0,0,1,13.26.73,15.69,15.69,0,0,1,2.69-3ZM86.62,62.18V96.3h7a4.22,4.22,0,0,0,4.19-4.19V66.78a4.62,4.62,0,0,0-4.61-4.6ZM61.06,67.29a4.1,4.1,0,0,1,8.14,0V96.64a4.1,4.1,0,0,1-8.14,0V67.29Zm-35.32,0a3.85,3.85,0,0,1,4.06-3.58,3.85,3.85,0,0,1,4.07,3.58V96.64a3.85,3.85,0,0,1-4.07,3.58,3.85,3.85,0,0,1-4.06-3.58V67.29ZM43.4,64.53a4.1,4.1,0,0,1,8.13,0V99.39a4.1,4.1,0,0,1-8.13,0V64.53ZM79.49,41.92l-1.68.1c-1.38,0-2.79,0-4.23,0l0,.36A13.75,13.75,0,0,1,63.17,56a15.62,15.62,0,0,1-7.83,0A14.39,14.39,0,0,1,47,50.18a17.47,17.47,0,0,1-2.29-5.66C44.35,43.26,44,42,40.94,42H15.43v71a2.83,2.83,0,0,0,2.81,2.81H76.7a2.79,2.79,0,0,0,2-.82h0a2.79,2.79,0,0,0,.82-2v-71ZM14.06,35.87C-5.81,22,16.13,2.22,29.72,17.48,28.63,4.77,46.69,2.76,50.66,12,56.51,1.93,72,5.28,75.25,17.88c8.81-4.95,20.4,9,6.68,17.65a49.47,49.47,0,0,1-8.68.43c-4.54-.08-5.68,2.24-5.73,6.38C67.41,51.45,56,52.72,52,46.77c-2.67-4-.35-10.9-11.09-10.9Z" />
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="orb orb-cyan" aria-hidden="true"></div>
+    <div class="orb orb-purple" aria-hidden="true"></div>
 
-                </svg>
-                Buy Me a Beer
-            </a>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Beardy Dev Adventures home">
+            <span class="brand-mark">BDA</span>
+            <span>Beardy Dev Adventures</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#builds">XR Builds</a>
+            <a href="#devlogs">Devlogs</a>
+            <a href="#experiments">Experiments</a>
+            <a href="#about">About</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="status-dot"></span> XR Lab Online</div>
+                <h1>Building weird XR experiments in public.</h1>
+                <p class="hero-intro">Quest prototypes, mixed reality tests, game devlogs, AI tools and the occasional chaotic side quest.</p>
+                <div class="hero-actions" aria-label="Primary links">
+                    <a class="button button-primary" href="https://www.youtube.com/@beardydevadventures" target="_blank" rel="noopener noreferrer">Watch the devlogs</a>
+                    <a class="button button-secondary" href="#builds">Explore XR builds</a>
+                </div>
+                <div class="badge-row" aria-label="Focus areas">
+                    <span class="badge">Meta Quest</span>
+                    <span class="badge">Mixed Reality</span>
+                    <span class="badge">Unity</span>
+                    <span class="badge">WebXR</span>
+                    <span class="badge">AI</span>
+                </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Beardy Dev lab card">
+                <div class="avatar-hologram">
+                    <span class="scan-ring scan-ring-one"></span>
+                    <span class="scan-ring scan-ring-two"></span>
+                    <img src="pixel-character.png" alt="Beardy Dev pixel character" class="pixel-character">
+                </div>
+                <div class="console-card">
+                    <p class="console-label">Current mode</p>
+                    <h2>XR Maker Lab</h2>
+                    <p>Prototype. Break things. Learn. Ship the next odd idea.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section-shell" id="builds">
+            <div class="section-heading">
+                <p class="eyebrow">Featured builds</p>
+                <h2>XR projects, prototypes and playable experiments.</h2>
+                <p>Proof that Beardy Dev Adventures is about building the things, not just talking about them.</p>
+            </div>
+
+            <div class="card-grid feature-grid">
+                <article class="project-card featured-card">
+                    <div class="card-topline">
+                        <span class="badge badge-hot">Released</span>
+                        <span class="badge">Quest</span>
+                    </div>
+                    <h3>Forge of Elements</h3>
+                    <p>A cosy VR puzzle adventure about shaping elements, solving spatial challenges and learning through playful interaction.</p>
+                    <a href="https://matthewaisthorpe.com.au/projects/vr/forge-of-elements/" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">
+                        <span class="badge">Mixed Reality</span>
+                        <span class="badge">Prototype</span>
+                    </div>
+                    <h3>MR Rubik Solver</h3>
+                    <p>A mixed reality experiment exploring camera-assisted puzzle solving, spatial guidance and real-world overlays.</p>
+                    <a href="https://github.com/beardydevadventures" target="_blank" rel="noopener noreferrer">See the lab</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">
+                        <span class="badge">VR</span>
+                        <span class="badge">Training</span>
+                    </div>
+                    <h3>VR Training Tests</h3>
+                    <p>Hands-on experiments around guided learning, object interaction, safety workflows and industrial simulation.</p>
+                    <a href="https://matthewaisthorpe.com.au/projects/" target="_blank" rel="noopener noreferrer">Explore work</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">
+                        <span class="badge">Game Dev</span>
+                        <span class="badge">Chaos</span>
+                    </div>
+                    <h3>Smash Room</h3>
+                    <p>A destruction sandbox built for stress-testing physics, object feel, interaction timing and silly fun.</p>
+                    <a href="https://www.fovrinteractive.net/" target="_blank" rel="noopener noreferrer">Visit FoVR</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell split-section" id="devlogs">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Latest devlogs</p>
+                <h2>Build notes, tests and side quests.</h2>
+                <p>The YouTube channel is where the rough edges, experiments and lessons learned should live.</p>
+            </div>
+            <div class="devlog-panel">
+                <div class="video-placeholder" aria-hidden="true">
+                    <span class="play-icon">▶</span>
+                </div>
+                <div>
+                    <h3>Follow the build journey</h3>
+                    <p>Short devlogs, XR tests, indie build updates and breakdowns of what worked, what broke and what is worth trying next.</p>
+                    <a class="button button-primary" href="https://www.youtube.com/@beardydevadventures" target="_blank" rel="noopener noreferrer">Open YouTube</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell" id="experiments">
+            <div class="section-heading">
+                <p class="eyebrow">Experiment wall</p>
+                <h2>Small tests that might become bigger things.</h2>
+            </div>
+            <div class="experiment-wall">
+                <span>Hand tracking</span>
+                <span>AI tools</span>
+                <span>Voxel art</span>
+                <span>Quest builds</span>
+                <span>WebXR</span>
+                <span>Unity prototypes</span>
+                <span>Mixed reality UI</span>
+                <span>Game jams</span>
+                <span>Spatial interaction</span>
+                <span>Weird web things</span>
+            </div>
+        </section>
+
+        <section class="section-shell about-section" id="about">
+            <div>
+                <p class="eyebrow">About the builder</p>
+                <h2>Hey, I’m Matt.</h2>
+                <p>Beardy Dev Adventures is where I experiment, break things, learn in public and turn odd ideas into interactive prototypes. It is the playful side of my XR, AI and game development work.</p>
+            </div>
+            <div class="link-stack" aria-label="Profile links">
+                <a href="https://matthewaisthorpe.com.au/" target="_blank" rel="noopener noreferrer">Matthew Aisthorpe</a>
+                <a href="https://www.fovrinteractive.net/" target="_blank" rel="noopener noreferrer">FoVR Interactive</a>
+                <a href="https://github.com/beardydevadventures" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/beardydevadv" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                <a href="mailto:beardydevadventures@gmail.com">Contact</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <section class="personal-links">
-            <a href="mailto:beardydevadventures@gmail.com">Contact Me</a>
-        </section>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Beardy Dev Adventures. Weird XR builds, devlogs and interactive experiments.</p>
+        <div class="footer-links">
+            <a href="https://www.youtube.com/@beardydevadventures" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.buymeacoffee.com/beardydev" target="_blank" rel="noopener noreferrer">Buy Me a Beer</a>
+            <a href="mailto:beardydevadventures@gmail.com">Email</a>
+        </div>
     </footer>
+
     <script>
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-            document.body.classList.add('light-theme');
-            document.querySelector('.theme-toggle').textContent = '☀️';
+        const body = document.body;
+        const themeToggle = document.querySelector('.theme-toggle');
+        const savedTheme = localStorage.getItem('beardy-theme');
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+
+        if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+            body.classList.add('light-theme');
+            themeToggle.textContent = '☀️';
         }
 
-        document.querySelector('.theme-toggle').addEventListener('click', function () {
-            document.body.classList.toggle('light-theme');
-            this.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
+        themeToggle.addEventListener('click', function () {
+            body.classList.toggle('light-theme');
+            const isLight = body.classList.contains('light-theme');
+            this.textContent = isLight ? '☀️' : '🌙';
+            localStorage.setItem('beardy-theme', isLight ? 'light' : 'dark');
         });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 
